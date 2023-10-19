@@ -1,7 +1,7 @@
-title: Your awesome title
-author:
-  name: GitHub User
-  email: your-email@domain.com
+title: titimariamumu.github.io
+author: Christian Maria Morgan
+  name: @titi.maria.mumu 
+  email: titi.maria.mumu@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -15,6 +15,10 @@ description: >
 theme: minima
 
 plugins:
+
+ - jekyll-feed
+ - jekyll-seo-tag
+
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -55,3 +59,4 @@ minima:
 # Set to `true` to show excerpts on the homepage.
 #
 # show_excerpts: false
+
