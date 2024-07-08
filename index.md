@@ -5,7 +5,1129 @@
 # To change the home page layout, edit the _layouts/home.html file.
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
-layout: raw
+# layout: raw
+# layout: home
 ---
 
-test
+  <!-- Based off of this template: https://why21.causalai.net/ -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>WHY21 - Causal Inference &amp; Machine Learning: Why now?</title>
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-27875070-4", "auto");
+      ga("send", "pageview", "/why21");
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style type="text/css">
+      .text-white-50 {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .bg-color {
+        background-color: #315cd3;
+      }
+
+      .border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .box-shadow {
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+      }
+
+      .lh-100 {
+        line-height: 1;
+      }
+
+      .lh-125 {
+        line-height: 1.25;
+      }
+
+      .lh-150 {
+        line-height: 1.5;
+      }
+
+      .jumbotron-billboard .img {
+        margin-bottom: 0px;
+        color: #fff;
+        background: #fff url("./background2.jpg") top center no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .jumbotron h1 {
+        margin-top: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 800;
+      }
+
+      .jumbotron p {
+        color: rgb(78, 78, 78);
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+      }
+
+      .jumbotron {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .jumbotron .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      @media screen and (max-width: 768px) {
+        .jumbotron {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+
+      .jumbotron .graphic {
+        width: 30%;
+        padding-top: 12px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .jumbotron .graphic {
+          width: 70%;
+          padding-top: 12px;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .jumbotron-heading {
+          font-size: 30px;
+        }
+      }
+
+      .anchoritem {
+        display: block;
+        padding-top: 4rem;
+        margin-top: -4rem;
+      }
+
+      .schedule {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+      .list-inline li {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .list-inline img {
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body
+    data-spy="scroll"
+    data-target="#navbarCollapse"
+    class="bg-light"
+    style="min-height: 75rem;margin-top:3rem;"
+  >
+    <nav
+      class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+    >
+      <a class="navbar-brand" href="#">NeurIPS WHY-21</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#motivation" class="nav-link">Motivation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#topics" class="nav-link">Topics</a>
+          </li>
+          <li class="nav-item">
+            <a href="#speakers" class="nav-link">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#schedule" class="nav-link">Schedule</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#logistics" class="nav-link">Logistics</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pc" class="nav-link">Committee</a>
+          </li>
+          <li class="nav-item">
+            <a href="#organizers" class="nav-link">Organizers</a>
+          </li>
+          <li class="nav-item">
+            <a href="research.html" class="nav-link">Accepted Papers</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <section class="jumbotron text-center jumbotron-billboard">
+        <!--padding-bottom:0;-->
+        <div class="img"></div>
+        <div class="container">
+          <br><br>
+          <br>
+          <h1 class="jumbotron-heading" style="color: white; text-shadow: 3px 3px black;">
+            Causal Inference & Machine Learning: Why now?
+          </h1>
+          <br><br>
+          <h2 class="jumbotron-heading" style="color: white; text-shadow: 2px 2px black;">
+              December 13th, 2021
+          </h2>
+          <br>
+          <h2 class="jumbotron-heading" style="color: white; text-shadow: 2px 2px black;">
+              WHY-21 @ NeurIPS
+          </h2>
+          <br>
+          <!--<p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    </p>-->
+          
+          <!--<img src="cause_effect.svg" class="graphic" />
+                <div style="word-spacing: 15px; padding-top: 30px; padding-bottom: 20px;">
+                    <a href="#motivation">Motivation</a>
+                    <a href="#topics">Topics</a>
+                    <a href="#logistics">Logistics</a>
+                    <a href="#organizers">Organizers</a>
+                </div>-->
+        </div>
+      </section>
+      <!--
+        <div class="d-flex align-items-center p-4 my-4 text-white-50 bg-color rounded box-shadow">
+            <div class="lh-100">
+                <h5 class="mb-2 text-white lh-100 mt-2">Beyond Curve Fitting: Causation, Counterfactuals, and Imagination-based AI </h5>
+                <h6>Something Syposium 2018</h6>
+            </div>
+        </div>-->
+      <div class="container">
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5
+            class="border-bottom border-gray pb-2 mb-0 anchoritem"
+            id="motivation"
+          >
+            Motivation
+          </h5>
+          <div class="media text-muted pt-3">
+            <p class="media-body pb-1 mb-0 medium lh-125">
+          Machine Learning has received enormous attention from the scientific community due to the successful application of deep neural networks in computer vision, natural language processing, and game-playing (most notably through reinforcement learning). However, a growing segment of the machine learning community recognizes that there are still fundamental pieces missing from the AI puzzle, among them causal inference. This recognition comes from the observation that even though causality is a central component found throughout the sciences, engineering, and many other aspects of human cognition, explicit reference to causal relationships is largely missing in current learning systems. 
+          <br><br>
+          This entails a new goal of <b><i>integrating causal inference and machine learning capabilities</i></b> into the next
+          generation of intelligent systems, thus paving the way towards higher levels of intelligence and human-centric AI. The synergy goes in both directions; causal inference benefitting from machine learning and the other way around. 
+          </p>
+          </div>
+          <div class="media text-muted pt-3">
+                      <ul class="media-body medium " style='margin-bottom: -1px'>
+          <li>Current machine learning systems lack the ability to leverage the invariances imprinted by the underlying causal mechanisms towards reasoning about generalizability, explainability, interpretability, and robustness. </li>
+          <li>Current causal inference methods, on the other hand, lack the ability to scale up to high-dimensional
+          settings, where current machine learning systems excel.</li>
+          </ul>
+          </div>
+
+          <div class="media text-muted pt-3">
+            <p class="media-body pb-1 mb-0 medium lh-125">
+          All indications are that such marriage can be extremely fruitful. For instance, initial results indicate that understanding and leveraging causal invariances is a crucial ingredient in achieving out-of-distribution generalization (transportability) -- something that humans do much better than state-of-the-art ML systems. Also, causal inference methodology offers a systematic way of combining passive observations and active experimentation, allowing more robust and stable construction of models of the environment. In the other direction, there is a growing evidence that embedding causal and counterfactual inductive biases into deep learning systems can lead to high-dimensional inferences that are needed in realistic scenarios.
+          <br><br>
+          <!--The 2nd edition of the WHY workshop (first edition, <a href="https://why19.causalai.net/" target="_blank">link</a>) focuses on bringing together researchers from both camps to initiate
+          -->
+          This 2nd edition of the WHY workshop (1st edition: <a style="color: gray" href="https://why19.causalai.net/" target="_blank">WHY-19</a>) focuses on bringing together researchers from both camps to initiate
+          principled discussions about the integration of causal reasoning and machine
+          learning perspectives to help tackle the challenging AI tasks of the coming decades. We
+          welcome researchers from all relevant disciplines, including but not limited to computer
+          science, cognitive science, robotics, mathematics, statistics, physics, and philosophy. 
+      
+            </p>
+          </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5
+            class="border-bottom border-gray pb-2 mb-0 anchoritem"
+            id="topics"
+          >
+            Topics
+          </h5>
+          <div class="media text-muted pt-3">
+            <p class="media-body pb-1 mb-0 medium lh-125">
+              We will invite papers that describe methods for <b><i>answering causal questions with the help of
+              ML machinery</i></b>, or methods for <b><i>enhancing ML robustness and generalizability with the help of
+              causal models</i></b> (i.e., carriers of transparent structural assumptions). Authors are encouraged to
+              identify the specific task the paper aims to solve and where on the causal hierarchy their
+              contributions reside (i.e., associational, interventional, or counterfactual). Topics of interest
+              include but are not limited to the following:
+            </p>
+          </div>
+          <div class="media text-muted pt-1">
+            <ol class="media-body medium ">
+<li>Algorithms for causal inference and mechanisms discovery.</li>
+<li> Causal analysis of biases in data science & fairness analysis.</li>
+<li> Causal and counterfactual explanations.</li>
+<li> Generalizability, transportability, and out-of-distribution generalization.</li>
+<li> Causal reinforcement learning, planning, and imitation.</li>
+<li> Causal representation learning and invariant representations.</li>
+<li> Intersection of causal inference and neural networks.</li>
+<li> Fundamental limits of learning and inference, the causal hierarchy.</li>
+<li> Applications of the 3-layer hierarchy (Pearl Causal Hierarchy).</li>
+<li> Evaluation of causal ML methods (accuracy, scalability, etc).</li>
+<li> Causal reasoning and discovery in child development. </li>
+<li> Other connections between ML, cognition, and causality. </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5
+            class="border-bottom border-gray pb-2 mb-0 anchoritem"
+            id="speakers"
+          >
+            Invited Speakers 
+          </h5>
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="d-flex flex-column w-100">
+              <ul
+                class="list-inline"
+                style="line-height: 25px; text-align: center;"
+              >
+             <li>
+                  <a href="http://www.cs.columbia.edu/~blei/" target="_blank"><b><img
+                    src="people/Blei.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />David Blei</b></a> <br />(Columbia University)
+                </li>
+                
+                <li>
+                  <a href="https://www.victorchernozhukov.com/" target="_blank"><b><img
+                    src="people/Chernozhukov3.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />
+                  Victor Chernozhukov
+                  </b></a> <br />(MIT)
+                </li>
+
+                <li>
+                  <a href="https://cicl.stanford.edu/member/tobias_gerstenberg/" target="_blank"> <b><img
+                    src="people/Gerstenberg.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Tobias Gerstenberg</b> </a> <br />(Stanford University)
+                </li>
+                <li>
+                  <a href="http://alisongopnik.com/" target="_blank"><img
+                    src="people/Gopnik.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br /><b> Alison Gopnik </b></a>  <br />(UC Berkeley)
+                </li>
+                <li>
+                  <a href="https://www.cs.helsinki.fi/u/ahyvarin/" target="_blank"><b><img
+                    src="people/Hyvarinen.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Aapo Hyvarinen</b></a> <br />(U Helsinki)
+                </li>
+                
+                <li>
+                  <a href="http://web.stanford.edu/~icard/index.html" target="_blank"><b><img
+                    src="people/Icard.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Thomas Icard</b> </a> <br />(Stanford University)
+                </li>
+                
+             </ul>   
+             <ul
+                class="list-inline"
+                style="line-height: 25px; text-align: center;"
+              >
+                
+               <li>
+                  <a href="https://nke001.github.io/" target="_blank"> <b><img
+                    src="people/Rosemary.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Rosemary Nan Ke</b> </a> <br />(Mila)
+                </li>
+                
+                <li>
+                  <a href="https://sites.google.com/view/julius-von-kuegelgen/home/" target="_blank"> <b><img
+                    src="people/Kugelgen.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Julius von Kügelgen</b></a> <br />(Max Planck Institute) 
+                </li>
+                
+                <li>
+                  <a href="https://adele.github.io/" target="_blank"> <b><img
+                    src="people/Adele.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Adèle Ribeiro</b> </a> <br />(Columbia University)
+                </li>
+                
+                <li>
+                  <a href="https://shalit.net.technion.ac.il/people/" target="_blank"> <b><img
+                    src="people/Shalit.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Uri Shalit</b> </a> <br />(Technion)
+                </li>
+                
+ <li>
+                  <a href="http://www.homepages.ucl.ac.uk/~ucgtrbd/" target="_blank"><b><img
+                    src="people/Silva.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br />Ricardo Silva</b></a> <br />(UCL)
+                </li>
+                
+
+                                <li>
+                  <b><a href="https://www.carolineuhler.com/" target="_blank"><img
+                    src="people/Uhler.jpg"
+                    class="rounded-circle"
+                    width="150"
+                    height="150"
+                  /><br /> Caroline Uhler</b></a> <br /> (MIT)
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+
+         <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5
+            class="border-bottom border-gray pb-2 mb-0 anchoritem"
+            id="schedule"
+          >
+            Schedule (EST/NY time) [tentative]
+          </h5>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Start</th>
+                <th scope="col">End</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="schedule">
+                <td>10:00am</td>
+                <td>10:10am</td>
+                <td>
+                  <h6 style="color: black;">
+                  Opening Remarks
+                  </h6>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row" colspan="3">Session 1</th>
+              </tr>
+              <tr>
+                <td>10:10am</td>
+                <td>10:30am</td>
+                <td>
+                  <h6 style="color: black;">
+Calibration, out-of-distribution generalization and a path towards causal representations
+                  </h6>
+                  <i>Uri Shalit</i> 
+                </td>
+              </tr>
+              <tr>
+                <td>10:30am</td>
+                <td>10:50am</td>
+                <td>
+                  <h6 style="color: black;">
+                     Independent mechanism analysis, a new concept?
+                  </h6>
+                  <i>Julius von Kügelgen</i>
+                </td>
+              </tr>
+              <tr>
+                <td>10:50am</td>
+                <td>11:10am</td>
+                <td>
+                  <h6 style="color: black;">
+                     On the Assumptions of Synthetic Control Methods
+                  </h6>
+                  <i>David Blei </i>
+                </td>
+              </tr>
+              <tr>
+                <td>11:10am</td>
+                <td>11:25am</td>
+                <td>
+                  <h6 style="color: black;">
+                     Q&amp;A panel
+                  </h6>
+                </td>
+              </tr>
+  
+              
+              <tr class="schedule">
+                <th scope="row" colspan="3">Session 2</th>
+              </tr>
+              <tr class="schedule">
+                <td>11:30am</td>
+                <td>11:50am</td>
+                <td>
+                  <h6 style="color: black;">
+The Road to Causal Programming
+                  </h6>
+                  <i>Ricardo Silva</i>
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>11:50am</td>
+                <td>12:10pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Causal discovery by generative modelling
+                  </h6>
+                  <i>Aapo Hyvarinen</i>
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>12:10pm</td>
+                <td>12:30pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Going beyond the here and now: Counterfactual simulation in human cognition 
+                  </h6>
+                  <i>Tobias Gerstenberg</i>
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>12:30pm</td>
+                <td>12:45pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Q&amp;A panel
+                  </h6>
+                </td>
+              </tr>
+              
+              <tr>
+                <th scope="row" colspan="3">Poster Session</th>
+              </tr>
+               <tr>
+                <td>12:45pm</td>
+                <td>1:45pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Poster presentations at Gathertown
+                  </h6>
+                </td>
+              </tr>
+              
+              
+              <tr class="schedule">
+                <th scope="row" colspan="3">Session 3</th>
+              </tr>
+              <tr class="schedule">
+                <td>1:45pm</td>
+                <td>2:05pm</td>
+                <td>
+                  <h6 style="color: black;">
+A (topo)logical perspective on causal inference
+                  </h6>
+                <i>Thomas Icard</i>
+                </td>
+                
+              </tr>
+              <tr class="schedule">
+                <td>2:05pm</td>
+                <td>2:25pm</td>
+                <td>
+                  <h6 style="color: black;">
+Optimal Design of Interventions
+                  </h6>
+                  <i>Caroline Uhler</i>
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>2:25pm</td>
+                <td>2:45pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     From "What" to "Why": towards causal learning 
+                  </h6>
+                  <i>Rosemary Ke</i>
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>2:45pm</td>
+                <td>3:00pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Q&amp;A panel.
+                  </h6>
+                </td>
+              </tr>
+              
+              
+             <tr>
+                <th scope="row" colspan="3">Keynote Speaker</th>
+              </tr>
+               <tr>
+                <td>3:00pm</td>
+                <td>3:45pm</td>
+                <td>
+                  <h6 style="color: black;">
+The logic of Causal Inference
+                  </h6>
+                  <i>Judea Pearl</i>
+                </td>
+              </tr>              
+              <tr>
+                <td>3:45pm</td>
+                <td>4:00pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Discussion Panel
+                  </h6>
+                </td>
+              </tr>
+              
+        
+              <tr class="schedule">
+                <th scope="row" colspan="3">Contributed Talks</th>
+              </tr>
+              <tr class="schedule">
+                <td>4:00pm</td>
+                <td>4:15pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Causal Expectation-Maximisation
+                     <br />
+                  </h6>
+                     <i>Marco Zaffalon, Alessandro Antonucci, Rafael Cabañas</i>
+<br>
+                     IDSIA (Switzerland)
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>4:15pm</td>
+                <td>4:30pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     On the Adversarial Robustness of Causal Algorithmic Recourse 
+                     <br />
+                  </h6>
+                     <i>Ricardo Dominguez Olmedo, Amir Karimi, Bernhard Schölkopf</i>
+<br>
+                     Max Planck Instiute, University of Tübingen, ETH Zürich
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>4:30pm</td>
+                <td>4:45pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Scalable Causal Domain Adaptation
+                     <br />
+                  </h6>
+                     <i>Mohammad Ali Javidian, Om Pandey, Pooyan Jamshidi</i>
+<br>
+Purdue University, Kalinga Institute of Industrial Technology, University of South Carolina
+                </td>
+              </tr>
+              <tr class="schedule">
+                <td>4:45pm</td>
+                <td>5:00pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     BCD Nets: Scalable Variational Approaches for Bayesian Causal Discovery
+                     <br />
+                  </h6>
+                     <i>Chris Cundy, Aditya Grover, Stefano Ermon</i>
+<br>
+Stanford University, Facebook AI Research, UCLA 
+                </td>
+              </tr>
+              
+               <tr>
+                <th scope="row" colspan="3">Session 4</th>
+              </tr>
+              <tr>
+                <td>5:00pm</td>
+                <td>5:20pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Casual Learning in Children and Computational Models
+                  </h6>
+                  <i>Alison Gopnik</i>
+                </td>
+              </tr>
+              <tr>
+                <td>5:20pm</td>
+                <td>5:40pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Effect Identification in Cluster Causal Diagrams
+                  </h6>
+                  <i>Adèle Ribeiro</i>
+                </td>
+              </tr>
+              <tr>
+                <td>5:40pm</td>
+                <td>6:00pm</td>
+                <td>
+                  <h6 style="color: black;">
+Omitted Confounder Bias Bounds for Machine Learned Causal Models
+                  </h6>
+                  <i>Victor Chernozhukov</i>
+                </td>
+              </tr>
+              <tr>
+                <td>6:00pm</td>
+                <td>6:15pm</td>
+                <td>
+                  <h6 style="color: black;">
+                     Q&amp;A panel
+                  </h6>
+                </td>
+              </tr>
+  
+                <tr class="schedule">
+                <td>6:15pm</td>
+                <td>6:30pm</td>
+                <td>
+                  <h6 style="color: black;">
+                  Closing Remarks
+                  </h6>
+                </td>
+              </tr>
+          </table>
+        </div>
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5
+            class="border-bottom border-gray pb-2 mb-0 anchoritem"
+            id="logistics"
+          >
+            Logistics
+          </h5>
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <p
+              class="media-body pb-3 mb-0 medium lh-125 border-bottom border-gray"
+            >
+              <strong class="d-block text-gray-dark">Registration</strong>
+              The WHY-21 workshop is part of NeurIPS 2021 Conference. All the logistics, including the registration, is handled by NeurIPS. For details, see
+              <a href="https://neurips.cc/">here</a>.
+            </p>
+          </div>
+
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <p
+              class="media-body pb-3 mb-0 medium lh-125 border-bottom border-gray"
+            >
+              <strong class="d-block text-gray-dark">Format</strong>
+              The workshop will include 6 one-hour sessions. Each session is expected to have between 2-4 speakers and includes invited talks and presentations of some accepted papers. We expect to leave ample time for discussion and exchange of ideas. We will also have a poster session between the morning and afternoon sessions.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <p
+              class="media-body pb-3 mb-0 medium  lh-125 border-gray border-bottom"
+            >
+              <strong class="d-block text-gray-dark">Submissions</strong>
+               We will accept submissions for papers, including ongoing and more speculative work. Papers should be from 6 to 9 pages long (excluding references and appendix) and formatted using <a target="_blank" href="https://neurips.cc/Conferences/2021/CallForPapers">NeurIPS style</a> anonymously. All accepted papers will be presented as posters during the workshop, and some of them will be selected for oral presentations. Preference will be giving to unexplored tasks and new connections with the current paradigm in the field. Submissions will be lightly evaluated.  The overall goal is to have a forum for open discussion instead of only being an alternative venue for already mature work.  We accept submission through the <a target="_blank" href="https://cmt3.research.microsoft.com/WHY2021">CMT system</a>.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&amp;bg=e83e8c&amp;fg=e83e8c&amp;size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <p
+              class="media-body pb-3 mb-0 medium  lh-125 border-gray "
+              style="line-height: 1.5"
+            >
+              <strong class="d-block text-gray-dark">Important Dates</strong>
+              Submissions (electronic submission, PDF) due: <b>September 18th, 2021, AoE</b>
+              <br />
+              Notifications of acceptance: October 23nd, 2021, AoE
+            </p>
+          </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5 class="border-bottom border-gray pb-2 mb-0 anchoritem" id="pc">
+            Program Committee
+          </h5>
+         <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+              <!-- <div class="d-flex flex-column w-50"> -->
+                
+<div class="row">
+  <div class="col-sm">
+   <ul class="list-unstyled" style="line-height: 25px"> 
+<li>David Arbour	(Adobe Research)</li>
+<li>Sander Beckers	(University of Tübingen)</li>
+<li>Guangyi Chen	(Tsinghua University)</li>
+<li>Carlos Cinelli (University of Washington)</li>
+<li>Tom Claassen	(Radboud University)</li>
+<li>Juan	D	Correa	(Universidad Autónoma de Manizales)</li>
+<li>Alexander D'Amour	(Google Brain)</li>
+<li>Frederick Eberhardt	(Caltech)</li>
+<li>Robin Evans	(University of Oxford)</li>
+<li>Tian Gao	(IBM Research)</li>
+<li>Mingming Gong	(University of Melbourne)</li>
+<li>Jason	S	Hartford	(University of British Columbia)</li>
+<li>Tom Heskes	(Radboud University)</li>
+<li>Duligur Ibeling	(Stanford University)</li>
+<li>Thomas Icard	(Stanford University)</li>
+<li>Shalmali Joshi	(Harvard University)</li>
+<li>Yonghan Jung	(Purdue University)</li>
+<li>Edward	H	Kennedy	(Carnegie Mellon University)</li>
+<li>Murat Kocaoglu	(Purdue University)</li>
+<li>Kun Kuang	(Zhejiang University)</li>
+<li>Daniel Kumor	(Purdue University)</li>
+<li>Thuc Duy Le	(University of South Australia)</li>
+<li>Kai-Zhan Lee	(Columbia University)</li>
+<li>Sanghack Lee	(Seoul National University)</li>
+</ul>
+</div>
+
+<div class="col-sm">
+<ul class="list-unstyled" style="line-height: 25px"> 
+<li>Jiuyong Li	(University of South Australia)</li>
+<li>David Lopez-Paz	(FAIR)</li>
+<li>Sara Magliacane	(IBM Research)</li>
+<li>Daniel Malinsky	(Columbia University)</li>
+<li>Krikamol Muandet	(Max Planck Institute)</li>
+<li>Yulei Niu	(Columbia University)</li>
+<li>Pedro	A	Ortega	(DeepMind)</li>
+<li>David Parkes	(Harvard University)</li>
+<li>Emilija Perkovic	(University of Washington)</li>
+<li>Drago Plecko	(ETH Zürich)</li>
+<li>Jakob Runge	(German Aerospace Center)</li>
+<li>Shohei Shimizu	(Shiga University & RIKEN)</li>
+<li>Ricardo Silva	(University College London)</li>
+<li>Dhanya Sridhar (University of Montreal)</li>
+<li>Adarsh Subbaswamy	(Johns Hopkins University)</li>
+<li>Jin Tian	(Iowa State University)</li>
+<li>Sofia Triantafillou	(University of Pittsburgh)</li>
+<li>Tian-Zuo Wang	(Nanjing University)</li>
+<li>Kevin	M	Xia	(Columbia University)</li>
+<li>Marco Zaffalon	(IDSIA and Artificialy)</li>
+<li>Jiji Zhang	(Hong Kong Baptist University)</li>
+<li>Junzhe Zhang	(Columbia University)</li>
+<li>Lu Zhang	(University of Arkansas)</li>
+</ul>
+</div>
+
+              </div>
+            </div>
+
+</div>
+</div>
+
+
+<div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5 class="border-bottom border-gray pb-2 mb-0 anchoritem" id="pc">
+            Workflow Managers
+          </h5>
+         <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+              <!-- <div class="d-flex flex-column w-50"> -->
+<ul class="list-unstyled" style="line-height: 25px">      
+              <li>Alexis Bellot	(Columbia University)</li>
+              <li> Adèle Ribeiro (Columbia University)</li>
+</ul>
+          
+ </div>
+</div>
+</div>
+
+               
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h5
+            class="border-bottom border-gray pb-2 mb-0 anchoritem"
+            id="organizers"
+          >
+            Organizers
+          </h5>
+          
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="d-flex flex-column w-100">
+              <ul
+                class="list-inline"
+                style="line-height: 25px; text-align: center;"
+              >
+              <li style="margin:0px 40px 0px 40px">
+                  <a href="http://causalai.net/" target="_blank"> <b><img
+                    src="people/Bareinboim.jpg"
+                    class="rounded-circle"
+                    width="120"
+                    height="120"
+                  /><br />Elias Bareinboim</b> </a> <br />(Columbia  University)
+              </li>
+               
+              <li style="margin:0px 40px 00px 0px">
+                  <a href="https://www.is.mpg.de/~bs" target="_blank"> <b><img
+                    src="people/Scholkopf.jpg"
+                    class="rounded-circle"
+                    width="120"
+                    height="120"
+                  /><br />Bernhard Scholkopf</b> </a> <br />(Max Planck Institute)
+              </li> 
+                
+               <li style="margin:0px 40px 00px 0px">
+                  <a href="https://www.salk.edu/scientist/terrence-sejnowski" target="_blank"> <b><img
+                    src="people/Sejnowski.jpg"
+                    class="rounded-circle"
+                    width="120"
+                    height="120"
+                  /><br />Terry Sejnowski</b> </a> <br />(Salk Institute & UCSD)
+              </li> 
+              
+              <li style="margin:0px 40px 00px 0px">
+                  <a href="https://mila.quebec/en/person/bengio-yoshua/" target="_blank"> <b><img
+                    src="people/Bengio.jpg"
+                    class="rounded-circle"
+                    width="120"
+                    height="120"
+                  /><br />Yoshua Bengio</b> </a> <br />(U Montreal & Mila)
+              </li> 
+              
+               <li style="margin:0px 40px 00px 0px">
+                  <a href="http://bayes.cs.ucla.edu/jp_home.html" target="_blank"> <b><img
+                    src="people/Pearl.jpg"
+                    class="rounded-circle"
+                    width="120"
+                    height="120"
+                  /> <br /> Judea Pearl</b> </a> <br />(UCLA)
+              </li> 
+            </div>
+            </div>
+          
+         <!--<div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+          <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <strong class="text-gray-dark">
+                  <a href="http://causalai.net/">Elias Bareinboim</a>
+                </strong>
+              </div>
+              <span class="d-block">Columbia University</span>
+            </div>
+          </div> 
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <strong class="text-gray-dark">
+                  <a
+                    href="https://www.is.mpg.de/~bs"
+                    >Bernhard Scholkopf</a
+                  >
+                </strong>
+              </div>
+              <span class="d-block">Max Planck Institute for Intelligent Systems</span>
+            </div>
+          </div>
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <strong class="text-gray-dark">
+                  <a href="https://www.salk.edu/scientist/terrence-sejnowski"
+                    >Terry Sejnowski</a
+                  >
+                </strong>
+              </div>
+              <span class="d-block">Salk Institute for Biological Studies & University of California, San Diego</span>
+            </div>
+          </div>
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <strong class="text-gray-dark">
+                  <a href="https://mila.quebec/en/person/bengio-yoshua/"
+                    >Yoshua Bengio</a
+                  >
+                </strong>
+              </div>
+              <span class="d-block">Université de Montreal & Mila</span>
+            </div>
+          </div>
+          <div class="media text-muted pt-3">
+            <img
+              data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1"
+              alt=""
+              class="mr-2 rounded"
+            />
+            <div class="media-body pb-3 mb-0 lh-125 border-gray">
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <strong class="text-gray-dark">
+                  <a href="http://bayes.cs.ucla.edu/jp_home.html"
+                    >Judea Pearl</a
+                  >
+                </strong>
+              </div>
+              <span class="d-block">University of California, Los Angeles</span>
+            </div>
+            
+          </div>-->
+        </div>
+       
+       <div class="my-3 p-3 bg-white rounded box-shadow">
+         <div class="media text-muted pt-3">
+        <p class="text-center media-body pb-1 mb-0 medium lh-125"> 
+        For questions please contact us at <a href="mailto:why21neurips@gmail.com"> why21neurips@gmail.com </a>
+        </p>
+      </div>
+      </div>
+       </div>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
