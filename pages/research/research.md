@@ -1,4 +1,5 @@
 ---
+title: Research Updates
 layout: page
 permalink: research.html
 ---
