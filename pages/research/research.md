@@ -3,8 +3,6 @@ layout: page
 permalink: research.html
 ---
 
-## 2024
-
 **[C002]** [PDF](https://drive.google.com/file/d/1we4Exee_2RtRWagbMPzSwbqp08EIzeVI/view?usp=sharing) \\
 Anna K. Raichev, Jin Tian, Rina Dechter, Alexander Ihler. \\
 "Estimating Causal Effects from Learned Causal Bayesian Networks". \\
